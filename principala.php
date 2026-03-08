@@ -431,6 +431,12 @@ Apelând la noi veți evalua calitatea serviciilor și bunurilor pe care suntem 
 </div>
 </section>
 
+<!-- Mascot floating element -->
+<div class="mascot-container" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <span class="mascot-tooltip">Bună! Ai nevoie de ajutor? &#128075;</span>
+    <img src="image/mascot.svg" alt="Wintent Glass Mascot">
+</div>
+
 <footer>
    <center>
        <span class="footer_txt" style="display: none;">©  2022 Wintentglass Romania. Construit folosind WordPress și tema Mesmerize</span> 
