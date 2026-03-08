@@ -433,6 +433,12 @@ By calling us you will evaluate the quality of the services and goods that we ar
 </div>
 </section>
 
+<!-- Mascot floating element -->
+<div class="mascot-container" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <span class="mascot-tooltip">Hi! Need help? &#128075;</span>
+    <img src="image/mascot.svg" alt="Wintent Glass Mascot">
+</div>
+
 <footer>
    <center>
        <span class="footer_txt" style="display: none;">© 2022 Wintentglass Romania. Built using WordPress and Mesmerize theme</span> 
