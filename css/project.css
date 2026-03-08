@@ -289,3 +289,102 @@ body {
     -webkit-transform: scale(2);
     transform: scale(2);
 }
+
+/* ===== RESPONSIVE DESIGN ENHANCEMENTS ===== */
+
+/* Tablet landscape */
+@media only screen and (max-width: 1024px) {
+    .project_title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .topnav span {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+
+    .footer_txt {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .footer_link {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .footer_btn {
+        width: 340px;
+        height: 55px;
+        font-size: 18px;
+    }
+}
+
+/* Tablet portrait */
+@media only screen and (max-width: 768px) {
+    .project_title {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .topnav span {
+        font-size: 14px;
+        padding: 8px 10px;
+        margin-bottom: 30px;
+    }
+
+    .topnav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header_txt {
+        font-size: 14px;
+        margin-right: 6px;
+    }
+
+    .footer_txt {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .footer_link {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .footer_btn {
+        width: 280px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .copyright_f {
+        margin-top: 50px;
+        font-size: 14px;
+    }
+
+    #header {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .logo_img {
+        width: 200px !important;
+        height: auto !important;
+    }
+}
+
+/* Ensure project gallery images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Smooth transitions */
+.container,
+.row {
+    transition: all 0.3s ease;
+}
