@@ -646,6 +646,248 @@ html {
     transform: scale(2);
 }
 
+/* ===== RESPONSIVE DESIGN ENHANCEMENTS ===== */
+
+/* Tablet landscape (1024px and below) */
+@media only screen and (max-width: 1024px) {
+    .about_us_txt {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .about_txt {
+        font-size: 16px;
+    }
+
+    .big_txt {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .under_txt {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .btn_more {
+        width: 320px;
+        height: 55px;
+        font-size: 18px;
+    }
+
+    .about_info {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .order_txt {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .text_serv {
+        font-size: 17px;
+    }
+
+    .txt_serv {
+        font-size: 17px;
+    }
+
+    .input_t {
+        width: 100%;
+    }
+
+    .send_btn {
+        width: 100%;
+    }
+}
+
+/* Tablet portrait (768px and below) */
+@media only screen and (max-width: 768px) {
+    .about_us_txt {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .about_txt {
+        font-size: 14px;
+        line-height: 160%;
+    }
+
+    .big_txt {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .under_txt {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .btn_more {
+        width: 280px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .underimg_txt {
+        font-size: 14px;
+    }
+
+    .rotate_txt {
+        font-size: 14px;
+    }
+
+    .project_vertical {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .about_info {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .order_txt {
+        font-size: 26px;
+    }
+
+    .text_serv {
+        font-size: 15px;
+    }
+
+    .img_serv_t {
+        font-size: 14px;
+    }
+
+    .input_t {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .send_btn {
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .footer_txt {
+        font-size: 14px;
+        margin-top: 200px;
+    }
+
+    #order {
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+}
+
+/* Small devices (576px and below) */
+@media only screen and (max-width: 576px) {
+    .rotate_txt {
+        font-size: 12px;
+        margin-right: -40px;
+    }
+
+    .active_lang,
+    .passive_lang {
+        font-size: 14px;
+    }
+
+    .underimg_txt {
+        font-size: 11px;
+    }
+
+    .about_us_txt_m {
+        font-size: 22px;
+    }
+
+    .about_txt_m {
+        font-size: 13px;
+        line-height: 170%;
+    }
+
+    .btn_more_m {
+        width: 260px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .send_btn_m {
+        font-size: 16px;
+        height: 38px;
+    }
+
+    .about_info_m {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .order_txt_m {
+        font-size: 16px;
+    }
+}
+
+/* Extra small devices (375px and below) */
+@media only screen and (max-width: 375px) {
+    .rotate_txt_m {
+        font-size: 11px;
+        margin-right: -35px;
+    }
+
+    .about_us_txt_m {
+        font-size: 18px;
+    }
+
+    .big_txt_m {
+        font-size: 16px;
+    }
+
+    .under_txt_m {
+        font-size: 9px;
+    }
+
+    .about_txt_m {
+        font-size: 12px;
+    }
+
+    .text_serv_m {
+        font-size: 11px;
+    }
+
+    .btn_more_m {
+        width: 220px;
+        font-size: 14px;
+    }
+
+    .about_info_m {
+        font-size: 14px;
+    }
+
+    .input_t_m {
+        height: 36px;
+        font-size: 10px;
+    }
+
+    .footer_txt_m {
+        font-size: 7px;
+    }
+}
+
+/* Ensure images are responsive across all breakpoints */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Smooth transitions for responsive layout shifts */
+.container,
+.container-fluid,
+.row,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    transition: all 0.3s ease;
+}
+
 /* ===== Mascot floating element ===== */
 .mascot-container {
     position: fixed;
