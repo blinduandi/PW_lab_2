@@ -895,8 +895,10 @@ img {
     right: 20px;
     z-index: 9999;
     cursor: pointer;
-    transition: transform 0.3s ease;
-    animation: mascot-bounce 3s ease-in-out infinite;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 0.3s ease, opacity 0.5s ease;
+    animation: mascot-entrance 0.8s ease-out 2s forwards, mascot-bounce 3s ease-in-out 3s infinite;
 }
 
 .mascot-container:hover {
@@ -947,6 +949,17 @@ img {
     50% { transform: translateY(-10px); }
 }
 
+@keyframes mascot-entrance {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .mascot-container img {
         width: 60px;
@@ -958,5 +971,52 @@ img {
     .mascot-tooltip {
         font-size: 11px;
         padding: 6px 10px;
+    }
+}
+
+/* ===== Mobile-only Call Button ===== */
+.mobile-call-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #DD0E1E 0%, #b00b18 100%);
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(221, 14, 30, 0.4);
+    z-index: 9998;
+    animation: pulse-call 2s ease-in-out infinite;
+    cursor: pointer;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.mobile-call-btn:active {
+    transform: scale(0.95);
+}
+
+.mobile-call-btn svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes pulse-call {
+    0%, 100% {
+        box-shadow: 0 4px 15px rgba(221, 14, 30, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 25px rgba(221, 14, 30, 0.7);
+    }
+}
+
+/* Show only on mobile */
+@media only screen and (max-width: 768px) {
+    .mobile-call-btn {
+        display: block;
     }
 }
