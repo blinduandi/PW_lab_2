@@ -440,6 +440,12 @@ By calling us you will evaluate the quality of the services and goods that we ar
    </center>
 </footer>
 
+<!-- Mascot element -->
+<div class="mascot-container" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <span class="mascot-tooltip">Hi! Need glass solutions? ✨</span>
+    <img src="image/mascot.svg" alt="Wintent Glass Mascot">
+</div>
+
 </body>
 
 <script>
