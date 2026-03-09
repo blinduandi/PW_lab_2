@@ -438,6 +438,12 @@ Apelând la noi veți evalua calitatea serviciilor și bunurilor pe care suntem 
    </center>
 </footer>
 
+<!-- Mascot element -->
+<div class="mascot-container" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <span class="mascot-tooltip">Salut! Ai nevoie de sticlă? ✨</span>
+    <img src="image/mascot.svg" alt="Wintent Glass Mascot">
+</div>
+
 </body>
 
 <script>

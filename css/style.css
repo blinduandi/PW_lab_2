@@ -645,3 +645,76 @@ html {
     -webkit-transform: scale(2);
     transform: scale(2);
 }
+
+/* ===== Mascot floating element ===== */
+.mascot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation: mascot-bounce 3s ease-in-out infinite;
+}
+
+.mascot-container:hover {
+    transform: scale(1.15);
+    animation-play-state: paused;
+}
+
+.mascot-container img {
+    width: 90px;
+    height: auto;
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+.mascot-tooltip {
+    position: absolute;
+    bottom: 105%;
+    right: 0;
+    background: #DD0E1E;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 8px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.mascot-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    border: 6px solid transparent;
+    border-top-color: #DD0E1E;
+}
+
+.mascot-container:hover .mascot-tooltip {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes mascot-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@media only screen and (max-width: 600px) {
+    .mascot-container img {
+        width: 60px;
+    }
+    .mascot-container {
+        bottom: 10px;
+        right: 10px;
+    }
+    .mascot-tooltip {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+}
