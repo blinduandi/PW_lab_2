@@ -1,0 +1,68 @@
+{
+  "featured": [
+    {
+      "name": "MANGALIA OLIMPIC",
+      "thumb": "proiecte_1.jpg",
+      "thumb_m": "proiecte_1_m.jpg"
+    },
+    {
+      "name": "Ballroom",
+      "thumb": "proiecte_2.jpg",
+      "thumb_m": "proiecte_2_m.jpg"
+    },
+    {
+      "name": "GEAM BALCON",
+      "thumb": "proiecte_3.jpg",
+      "thumb_m": "proiecte_3_m.jpg"
+    },
+    {
+      "name": "CASA PRIVATA",
+      "thumb": "proiecte_4.jpg",
+      "thumb_m": "proiecte_4_m.jpg"
+    }
+  ],
+  "gallery": [
+    {
+      "name": "CLIQUE BISTRO",
+      "slug": "clique",
+      "images": ["clique_1.jpg", "clique_2.jpg", "clique_3.jpg", "clique_4.jpg", "clique_5.jpg"],
+      "video_thumb": "clique_vid.jpg"
+    },
+    {
+      "name": "TRESS CAFE VITAN",
+      "slug": "tress",
+      "images": ["tress_1.jpg", "tress_2.jpg", "tress_3.jpg", "tress_4.jpg", "tress_5.jpg"],
+      "video_thumb": "tress_vid.jpg"
+    },
+    {
+      "name": "BALLROOM CUPOLA",
+      "slug": "ballroom",
+      "images": ["ball_1.jpg", "ball_2.jpg", "ball_3.jpg", "ball_4.jpg", "ball_5.jpg"],
+      "video_thumb": "ball_vid.jpg"
+    },
+    {
+      "name": "ZONA PRAHOVA",
+      "slug": "zona",
+      "images": ["zona_1.jpg", "zona_2.jpg", "zona_3.jpg", "zona_4.jpg", "zona_5.jpg"],
+      "video_thumb": "zona_vid.jpg"
+    },
+    {
+      "name": "MANGALIA OLIMPIC HOTEL",
+      "slug": "mangalia",
+      "images": ["mangalia_1.jpg", "mangalia_2.jpg", "mangalia_3.jpg", "mangalia_4.jpg", "mangalia_5.jpg"],
+      "video_thumb": "mangalia_vid.jpg"
+    },
+    {
+      "name": "SOLE D'ITALIA",
+      "slug": "sole",
+      "images": ["sole_1.jpg", "sole_2.jpg", "sole_3.jpg", "sole_4.jpg", "sole_5.jpg"],
+      "video_thumb": "sole_vid.jpg"
+    },
+    {
+      "name": "PREDEAL",
+      "slug": "predeal",
+      "images": ["predeal_1.jpg", "predeal_2.jpg", "predeal_3.jpg", "predeal_4.jpg", "predeal_5.jpg"],
+      "video_thumb": "predeal_vid.jpg"
+    }
+  ]
+}

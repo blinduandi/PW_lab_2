@@ -1,0 +1,169 @@
+# Decap CMS Configuration for Wintent Glass
+# Git-based CMS powered by Netlify Identity + Git Gateway
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Netlify Identity for authentication
+local_backend: true  # Enables local proxy server for development
+
+# Media files
+media_folder: image
+public_folder: /image
+
+# ============================================================
+# COLLECTIONS
+# ============================================================
+collections:
+
+  # ----------------------------------------------------------
+  # SITE SETTINGS
+  # ----------------------------------------------------------
+  - name: site_settings
+    label: "Site Settings"
+    icon: settings
+    files:
+
+      - name: site
+        label: "General Settings"
+        file: src/_data/site.json
+        format: json
+        description: "Company contact info, social links, and statistics"
+        fields:
+          - { label: "Company Name", name: company_name, widget: string }
+          - { label: "Email Address", name: email, widget: string, pattern: ['.+@.+\..+', "Must be a valid email"] }
+          - { label: "Phone 1 (WhatsApp)", name: phone, widget: string, hint: "e.g. +40732467730" }
+          - { label: "Phone 2", name: phone2, widget: string, hint: "e.g. +37369045169" }
+          - { label: "WhatsApp Number", name: whatsapp, widget: string }
+          - { label: "Address", name: address, widget: string }
+          - { label: "Facebook URL", name: facebook_url, widget: string }
+          - { label: "Instagram URL", name: instagram_url, widget: string }
+          - { label: "Years of Experience", name: years_experience, widget: string, hint: "e.g. 30" }
+          - { label: "Projects Count", name: projects_count, widget: string, hint: "e.g. 1000+" }
+          - { label: "Employees Count", name: employees, widget: string, hint: "e.g. 50" }
+          - label: "Footer Links"
+            name: footer_links
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Display Label", name: label, widget: string }
+              - { label: "URL", name: url, widget: string }
+
+  # ----------------------------------------------------------
+  # HOME PAGE — ENGLISH
+  # ----------------------------------------------------------
+  - name: home_english
+    label: "Home Page (English)"
+    icon: home
+    files:
+
+      - name: home_en
+        label: "English Content"
+        file: src/_data/home_en.json
+        format: json
+        description: "All editable text for the English home page"
+        fields:
+          - { label: "About Section Title", name: about_title, widget: string }
+          - { label: "About Text", name: about_text, widget: text }
+          - { label: "Experience Stat Label", name: stat_experience_label, widget: string }
+          - { label: "Projects Stat Label", name: stat_projects_label, widget: string }
+          - { label: "Employees Stat Label", name: stat_employees_label, widget: string }
+          - { label: "Projects Section Title", name: projects_title, widget: string }
+          - { label: "'More Projects' Button Text", name: projects_more, widget: string }
+          - { label: "Services Section Title", name: services_title, widget: string }
+          - { label: "Services Description", name: services_description, widget: text }
+          - { label: "Services Subtitle 1", name: services_subtitle1, widget: string }
+          - { label: "Services Subtitle 2", name: services_subtitle2, widget: string }
+          - label: "Services List"
+            name: services
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Icon Filename", name: icon, widget: string, hint: "e.g. vehicol.svg" }
+              - { label: "Service Description", name: title, widget: text }
+          - { label: "Order Section Title", name: order_title, widget: string }
+          - { label: "Name Field Placeholder", name: order_name_placeholder, widget: string }
+          - { label: "Phone Field Placeholder", name: order_phone_placeholder, widget: string }
+          - { label: "Submit Button Text", name: order_btn, widget: string }
+          - { label: "Mascot Tooltip Text", name: mascot_tooltip, widget: string }
+
+  # ----------------------------------------------------------
+  # HOME PAGE — ROMANIAN
+  # ----------------------------------------------------------
+  - name: home_romanian
+    label: "Home Page (Romanian)"
+    icon: translate
+    files:
+
+      - name: home_ro
+        label: "Romanian Content"
+        file: src/_data/home_ro.json
+        format: json
+        description: "All editable text for the Romanian home page"
+        fields:
+          - { label: "Titlu Sectiune Despre", name: about_title, widget: string }
+          - { label: "Text Despre Noi", name: about_text, widget: text }
+          - { label: "Label Ani Experienta", name: stat_experience_label, widget: string }
+          - { label: "Label Proiecte", name: stat_projects_label, widget: string }
+          - { label: "Label Angajati", name: stat_employees_label, widget: string }
+          - { label: "Titlu Sectiune Proiecte", name: projects_title, widget: string }
+          - { label: "Text Buton Mai Multe Proiecte", name: projects_more, widget: string }
+          - { label: "Titlu Sectiune Servicii", name: services_title, widget: string }
+          - { label: "Descriere Servicii", name: services_description, widget: text }
+          - { label: "Subtitlu Servicii 1", name: services_subtitle1, widget: string }
+          - { label: "Subtitlu Servicii 2", name: services_subtitle2, widget: string }
+          - label: "Lista Servicii"
+            name: services
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Fisier Pictograma", name: icon, widget: string, hint: "e.g. vehicol.svg" }
+              - { label: "Descriere Serviciu", name: title, widget: text }
+          - { label: "Titlu Sectiune Comanda", name: order_title, widget: string }
+          - { label: "Placeholder Camp Nume", name: order_name_placeholder, widget: string }
+          - { label: "Placeholder Camp Telefon", name: order_phone_placeholder, widget: string }
+          - { label: "Text Buton Trimite", name: order_btn, widget: string }
+          - { label: "Text Tooltip Mascoata", name: mascot_tooltip, widget: string }
+
+  # ----------------------------------------------------------
+  # PROJECTS
+  # ----------------------------------------------------------
+  - name: projects_collection
+    label: "Projects"
+    icon: image
+    files:
+
+      - name: projects
+        label: "All Projects"
+        file: src/_data/projects.json
+        format: json
+        description: "Featured projects on the home page and the full gallery"
+        fields:
+
+          - label: "Featured Projects (shown on home page)"
+            name: featured
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Project Name", name: name, widget: string }
+              - { label: "Desktop Thumbnail", name: thumb, widget: image, media_folder: "/image", public_folder: "/image" }
+              - { label: "Mobile Thumbnail", name: thumb_m, widget: image, media_folder: "/image", public_folder: "/image" }
+
+          - label: "Gallery Projects (projects page)"
+            name: gallery
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Project Name", name: name, widget: string }
+              - { label: "URL Slug", name: slug, widget: string, hint: "lowercase, no spaces (e.g. clique)" }
+              - label: "Gallery Images"
+                name: images
+                widget: list
+                field:
+                  label: "Image"
+                  name: image
+                  widget: image
+                  media_folder: "/image"
+                  public_folder: "/image"
+              - { label: "Video Thumbnail", name: video_thumb, widget: image, media_folder: "/image", public_folder: "/image" }

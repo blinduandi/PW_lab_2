@@ -1,0 +1,13 @@
+{
+  "name": "wintent-glass",
+  "version": "1.0.0",
+  "description": "Wintent Glass landing page - built with Eleventy SSG and Decap CMS",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "dev": "eleventy --serve --watch"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

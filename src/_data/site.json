@@ -1,0 +1,17 @@
+{
+  "company_name": "WINTENT GLASS",
+  "email": "wintentglass@gmail.com",
+  "phone": "+40732467730",
+  "phone2": "+37369045169",
+  "whatsapp": "+40732467730",
+  "address": "Str. Babanovac nr8",
+  "facebook_url": "https://www.facebook.com/profile.php?id=100079448334161",
+  "instagram_url": "https://www.instagram.com/wintentglass/?hl=ro",
+  "years_experience": "30",
+  "projects_count": "1000+",
+  "employees": "50",
+  "footer_links": [
+    { "label": "www.pergolatechnical.ro", "url": "https://pergolatechnical.ro/" },
+    { "label": "www.pergolatechnical.com", "url": "https://pergolatechnical.com/" }
+  ]
+}

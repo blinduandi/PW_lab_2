@@ -1,0 +1,40 @@
+{
+  "about_title": "Despre noi",
+  "about_text": "Compania WintentGlass lucreaza cu succes pe piata din Romania si R.Moldova. Lucram pe principiul satisfacerii nevoilor si dorintelor fiecarui client. Am reusit sa adunam o echipa de profesionisti competenti si cu o vasta experienta in acest domeniu. Aici veti gasi cea mai mare selectie de pergole, terase si sisteme de umbrire din Romania si R.Moldova.",
+  "stat_experience_label": "Ani experienta",
+  "stat_projects_label": "Proiecte finisate",
+  "stat_employees_label": "Persoane angajate",
+  "projects_title": "Proiecte",
+  "projects_more": "Mai multe proiecte",
+  "services_title": "Servicii",
+  "services_description": "Doar aici veti gasi o solutie pentru cele mai complexe structuri cu produse de inalta calitate montaj competent si precis. Fiecare dintre specialistii nostri isi imbunatateste constant abilitatile la traininguri si seminarii practice. Apeland la noi veti evalua calitatea serviciilor si bunurilor pe care suntem gata sa vi le oferim cu placere. Ne cunoastem afacerea perfect!",
+  "services_subtitle1": "Oferim clientilor nostri o gama larga de servicii",
+  "services_subtitle2": "Livrare si instalare de inalta calitate de catre specialisti competenti",
+  "services": [
+    {
+      "icon": "vehicol.svg",
+      "title": "Plecarea unui specialist la obiect, locuinta, birou din Bucuresti si nu numai"
+    },
+    {
+      "icon": "ruler.svg",
+      "title": "Masurarea ferestrelor si demonstrarea cataloagelor, modelelor, culorilor"
+    },
+    {
+      "icon": "document.svg",
+      "title": "Calculul costului comenzii la unitate"
+    },
+    {
+      "icon": "discounts.svg",
+      "title": "Sistem flexibil de reduceri"
+    },
+    {
+      "icon": "repair.svg",
+      "title": "Service garantie si post-garantie"
+    }
+  ],
+  "order_title": "Comanda un sunet",
+  "order_name_placeholder": "Nume",
+  "order_phone_placeholder": "Telefon",
+  "order_btn": "Trimite mesajul",
+  "mascot_tooltip": "Salut! Ai nevoie de ajutor? &#128075;"
+}

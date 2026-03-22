@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ page_lang | default('en') }}">
+<head>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page_description | default(site.company_name + ' - Pergolas, terraces and shading systems') }}">
+
+  <title>{{ page_title | default('WINTENT GLASS') }}</title>
+  <link rel="stylesheet" href="{{ page_css | default('/css/style.css') }}">
+</head>
+<body>
+
+  {{ content | safe }}
+
+  <!-- Mascot floating element -->
+  <div class="mascot-container" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    {% if page_lang == 'ro' %}
+      <span class="mascot-tooltip">{{ home_ro.mascot_tooltip | safe }}</span>
+    {% else %}
+      <span class="mascot-tooltip">{{ home_en.mascot_tooltip | safe }}</span>
+    {% endif %}
+    <img src="/image/mascot.svg" alt="{{ site.company_name }} Mascot">
+  </div>
+
+  <!-- Mobile-only Call Button -->
+  <a href="tel:{{ site.phone }}" class="mobile-call-btn" aria-label="Call us">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+      <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+    </svg>
+  </a>
+
+</body>
+</html>

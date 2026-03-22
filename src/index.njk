@@ -1,0 +1,319 @@
+---
+layout: base.njk
+page_title: WINTENT GLASS
+page_lang: en
+page_css: /css/style.css
+---
+
+<!-- ========== DESKTOP HEADER ========== -->
+<section id="header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2" id="leftside">
+        <div class="rotate_txt d-flex justify-content-end">
+          <a href="{{ site.facebook_url }}"><span>Facebook</span></a>
+          <a href="{{ site.instagram_url }}" style="margin-left:50%;"><span>Instagram</span></a>
+        </div>
+        <div class="language d-flex justify-content-end align-self-end">
+          <a href="/" class="active_lang">EN</a>
+          <a href="/principala" class="passive_lang">RO</a>
+        </div>
+      </div>
+      <div class="col-10" id="rightside">
+        <img src="/image/logo.png" alt="{{ site.company_name }}" class="logo_img">
+        <img id="main" style="width:100%;height:auto;" src="/image/main_img_1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-4">
+    <div class="row align-center">
+      <div class="col-3 text-center"></div>
+      <div class="col-2 text-center">
+        <span class="underimg_txt align-middle">{{ site.address }}</span>
+      </div>
+      <div class="col-2 text-center">
+        <a href="mailto:{{ site.email }}" class="underimg_txt align-middle">{{ site.email }}</a>
+      </div>
+      <div class="col-2 text-center">
+        <a href="tel:{{ site.phone }}" class="underimg_txt align-middle">{{ site.phone }}</a>
+      </div>
+      <div class="col-3 text-center">
+        <a style="margin-right:10px;" id="arrow"><img src="/image/arrow.png" alt="Next"></a>
+        <img id="number" src="/image/01.png" alt="1">
+        <img src="/image/033.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MOBILE HEADER ========== -->
+<section id="header_m">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1" id="leftside">
+        <div class="rotate_txt_m d-flex justify-content-end">
+          <a href="{{ site.facebook_url }}"><span>Facebook</span></a>
+          <a href="{{ site.instagram_url }}" style="margin-left:10%;"><span>Instagram</span></a>
+        </div>
+        <center>
+          <div class="language_m">
+            <a href="/principala" class="pasive_lang_m">RO</a>
+            <a href="/" class="active_lang_m">EN</a>
+          </div>
+        </center>
+      </div>
+      <div class="col-11" id="rightside">
+        <img src="/image/logo.png" alt="{{ site.company_name }}" class="logo_img" width="104px" height="36px">
+        <img id="main_m" style="width:100%;height:auto;" src="/image/main_img_1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-4 d-flex justify-content-center">
+    <div class="row">
+      <div class="col-auto text-center-m">
+        <a href="mailto:{{ site.email }}" class="underimg_txt_m align-middle">{{ site.email }}</a>
+      </div>
+      <div class="col-auto text-center-m">
+        <a href="tel:{{ site.phone }}" class="underimg_txt_m align-middle">{{ site.phone }}</a>
+      </div>
+      <div class="col-auto text-center-m">
+        <a id="arrow_m"><img src="/image/arrow.png" alt="Next"></a>
+        <img id="number_m" src="/image/01.png" width="25px" height="20px" alt="1">
+        <img src="/image/033.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT (DESKTOP) ========== -->
+<section id="about" class="mt-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-11">
+        <span class="about_us_txt">{{ home_en.about_title }}</span>
+        <div class="row mt-5">
+          <div class="col-5">
+            <span class="about_txt">{{ home_en.about_text }}</span>
+          </div>
+          <div class="col-7" style="padding:0;">
+            <img src="/image/about_img.jpg" alt="About Wintent Glass" style="width:100%;height:auto;">
+          </div>
+        </div>
+        <div class="row mt-5 align-center">
+          <div class="col-2"></div>
+          <div class="col-3">
+            <span class="big_txt">{{ site.years_experience }}</span><br>
+            <span class="under_txt">{{ home_en.stat_experience_label }}</span>
+          </div>
+          <div class="col-3">
+            <span class="big_txt">{{ site.projects_count }}</span><br>
+            <span class="under_txt">{{ home_en.stat_projects_label }}</span>
+          </div>
+          <div class="col-3">
+            <span class="big_txt">{{ site.employees }}</span><br>
+            <span class="under_txt">{{ home_en.stat_employees_label }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT (MOBILE) ========== -->
+<section id="about_m" class="mt-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <span class="about_us_txt_m">{{ home_en.about_title }}</span>
+        <span class="about_txt_m">{{ home_en.about_text }}</span>
+        <img src="/image/about_img.jpg" alt="About Wintent Glass" style="width:100%;height:auto;">
+        <div class="row mt-2 align-center align-bottom">
+          <div class="col-4">
+            <span class="big_txt_m">{{ site.years_experience }}</span><br>
+            <span class="under_txt_m">{{ home_en.stat_experience_label }}</span>
+          </div>
+          <div class="col-4">
+            <span class="big_txt_m">{{ site.projects_count }}</span><br>
+            <span class="under_txt_m">{{ home_en.stat_projects_label }}</span>
+          </div>
+          <div class="col-4">
+            <span class="big_txt_m">{{ site.employees }}</span><br>
+            <span class="under_txt_m">{{ home_en.stat_employees_label }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FEATURED PROJECTS (DESKTOP) ========== -->
+<section id="project" class="mt-5 mb-5">
+  <div class="container">
+    <span class="about_us_txt" style="margin-bottom:160px;">{{ home_en.projects_title }}</span>
+    <div class="row mt-4">
+      {% for item in projects.featured %}
+      <div class="col-3 proj_img" style="margin:0;padding:0;">
+        <img src="/image/{{ item.thumb }}" alt="{{ item.name }}" style="width:80%;height:auto;">
+        <span class="project_vertical" style="margin-left:-30px;">{{ item.name }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    <center style="margin-top:100px;">
+      <a href="/project" class="radial-out btn-advanced btn_more d-flex justify-content-center">{{ home_en.projects_more }}</a>
+    </center>
+  </div>
+</section>
+
+<!-- ========== FEATURED PROJECTS (MOBILE) ========== -->
+<section id="project_m" class="mt-5">
+  <div class="container-fluid">
+    <span class="about_us_txt_m">{{ home_en.projects_title }}</span>
+  </div>
+  {% for item in projects.featured %}
+  <img src="/image/{{ item.thumb_m }}" class="mt-2" alt="{{ item.name }}" style="width:100%;height:auto;">
+  <span class="project_vertical_m" style="margin-left:10px;">{{ item.name }}</span>
+  {% endfor %}
+  <center class="mt-3">
+    <button onclick="location.href='/project';" class="btn_more_m d-flex justify-content-center">{{ home_en.projects_more }}</button>
+  </center>
+</section>
+
+<!-- ========== SERVICES (DESKTOP) ========== -->
+<section id="services">
+  <div class="container mt-5">
+    <span class="about_us_txt">{{ home_en.services_title }}</span>
+    <p class="text_serv mt-4">{{ home_en.services_description }}</p>
+    <p class="txt_serv">{{ home_en.services_subtitle1 }}</p>
+    <p class="txt_serv">{{ home_en.services_subtitle2 }}</p>
+    <div class="row justify-content-between mt-5">
+      {% for service in home_en.services %}
+      <div class="col-auto">
+        <embed src="/image/{{ service.icon }}" type="">
+        <p class="img_serv_t">{{ service.title }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES (MOBILE) ========== -->
+<section id="services_m">
+  <div class="container mt-5">
+    <span class="about_us_txt_m">{{ home_en.services_title }}</span>
+    <p class="text_serv_m mt-4">{{ home_en.services_description }}</p>
+    <p class="text_serv_m">{{ home_en.services_subtitle1 }}</p>
+    <p class="text_serv_m_h">{{ home_en.services_subtitle2 }}</p>
+    <div class="row mt-3">
+      {% for service in home_en.services %}
+      <div class="col-4 mt-md-2" style="height:100px;">
+        <embed src="/image/{{ service.icon }}" type="">
+      </div>
+      <div class="col-8 mt-md-2" style="height:100px;">
+        <p class="img_serv_t">{{ service.title }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ========== ORDER A CALL (DESKTOP) ========== -->
+<section id="order">
+  <div class="container">
+    <span class="order_txt">{{ home_en.order_title }}</span>
+    <div class="row mt-3">
+      <div class="col-6">
+        <form name="contact-en" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact-en">
+          <input type="hidden" name="bot-field">
+          <input type="text" name="name" class="input_t" placeholder="{{ home_en.order_name_placeholder }}" required><br>
+          <input type="tel" name="telephone" class="input_t" placeholder="{{ home_en.order_phone_placeholder }}" required><br>
+          <button type="submit" class="radial-out btn-advanced send_btn">{{ home_en.order_btn }}</button>
+        </form>
+      </div>
+      <div class="col-6">
+        <a href="mailto:{{ site.email }}" class="about_info" style="padding:0;">
+          <embed src="/image/mail.svg" type="" style="margin-right:20px;margin-bottom:-10px;">{{ site.email }}</a><br>
+        <a href="tel:{{ site.whatsapp }}" class="about_info">
+          <embed src="/image/whatsapp.svg" type="" style="margin-right:20px;margin-top:20px;"> {{ site.whatsapp }}</a><br>
+        <a href="tel:{{ site.phone2 }}" class="about_info">
+          <embed src="/image/phone.svg" type="" style="margin-right:24px;"> {{ site.phone2 }}</a><br>
+        <span class="about_info">
+          <embed src="/image/pin.svg" type="" style="margin-right:20px;margin-top:20px;">{{ site.address }}</span><br>
+        <a href="{{ site.facebook_url }}">
+          <embed src="/image/facebook.png" type="" style="margin-right:20px;margin-top:20px;"></a>
+        <a href="{{ site.instagram_url }}">
+          <embed src="/image/instagram.png" type=""></a><br>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ORDER A CALL (MOBILE) ========== -->
+<section id="order_m">
+  <div class="container-fluid mt-4">
+    <span class="order_txt_m">{{ home_en.order_title }}</span>
+    <form name="contact-en-mobile" class="mt-4" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact-en-mobile">
+      <input type="text" name="name" class="input_t_m d-flex justify-content-center" placeholder="{{ home_en.order_name_placeholder }}" required><br>
+      <input type="tel" name="telephone" class="input_t_m d-flex justify-content-center" placeholder="{{ home_en.order_phone_placeholder }}" required><br>
+      <input type="submit" value="{{ home_en.order_btn }}" class="send_btn_m d-flex justify-content-center mt-2">
+    </form>
+    <a href="mailto:{{ site.email }}" class="about_info_m mt-4">
+      <embed src="/image/mail.svg" type="" style="margin-right:20px;margin-bottom:-10px;">{{ site.email }}</a><br>
+    <a href="tel:{{ site.whatsapp }}" class="about_info_m">
+      <embed src="/image/whatsapp.svg" type="" style="margin-right:20px;margin-top:20px;"> {{ site.whatsapp }}</a><br>
+    <a href="tel:{{ site.phone2 }}" class="about_info_m">
+      <embed src="/image/phone.svg" type="" style="margin-right:24px;"> {{ site.phone2 }}</a><br>
+    <span class="about_info_m">
+      <embed src="/image/pin.svg" type="" style="margin-right:20px;margin-top:20px;">{{ site.address }}</span><br>
+    <a href="{{ site.facebook_url }}">
+      <embed src="/image/facebook.png" type="" style="margin-right:20px;margin-top:20px;"></a>
+    <a href="{{ site.instagram_url }}">
+      <embed src="/image/instagram.png" type=""></a>
+  </div>
+</section>
+
+<footer>
+  <center>
+    <span class="footer_txt" style="display:none;">© 2022 Wintentglass Romania. Built with Eleventy &amp; Decap CMS</span>
+    <span class="footer_txt_m" style="display:none;">© 2022 Wintentglass Romania. Built with Eleventy &amp; Decap CMS</span>
+  </center>
+</footer>
+
+<script>
+$(document).ready(function () {
+  if ($(window).width() > 800) {
+    $('#header').show(); $('#about').show(); $('#project').show(); $('#services').show(); $('#order').show(); $('.footer_txt').show();
+  } else {
+    $('#header_m').show(); $('#about_m').show(); $('#project_m').show(); $('#services_m').show(); $('#order_m').show(); $('.footer_txt_m').show();
+  }
+});
+
+var i = 1;
+$("#arrow").click(function () {
+  switch (i) { case 1: i = 2; break; case 2: i = 3; break; case 3: i = 1; break; }
+  var image = $("#number"), mainimg = $("#main");
+  image.fadeOut('fast', function () { image.attr('src', '/image/0' + i + '.png'); image.fadeIn('normal'); });
+  mainimg.fadeOut(4, function () { mainimg.attr('src', '/image/main_img_' + i + '.jpg'); mainimg.fadeIn('fast'); });
+});
+
+$("#arrow_m").click(function () {
+  switch (i) { case 1: i = 2; break; case 2: i = 3; break; case 3: i = 1; break; }
+  var image = $("#number_m"), mainimg = $("#main_m");
+  image.fadeOut('fast', function () { image.attr('src', '/image/0' + i + '.png'); image.fadeIn('normal'); });
+  mainimg.fadeOut(4, function () { mainimg.attr('src', '/image/main_img_' + i + '.jpg'); mainimg.fadeIn('fast'); });
+});
+
+$(window).resize(function () {
+  if ($(window).width() > 800) {
+    $('#header').show(); $('#about').show(); $('#project').show(); $('#services').show(); $('#order').show(); $('.footer_txt').show();
+    $('#header_m').hide(); $('#about_m').hide(); $('#project_m').hide(); $('#services_m').hide(); $('#order_m').hide(); $('.footer_txt_m').hide();
+  } else {
+    $('#header_m').show(); $('#about_m').show(); $('#project_m').show(); $('#services_m').show(); $('#order_m').show(); $('.footer_txt_m').show();
+    $('#header').hide(); $('#about').hide(); $('#project').hide(); $('#services').hide(); $('#order').hide(); $('.footer_txt').hide();
+  }
+});
+</script>

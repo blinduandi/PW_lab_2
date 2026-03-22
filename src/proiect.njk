@@ -1,0 +1,148 @@
+---
+layout: base.njk
+page_title: WINTENT GLASS - Proiecte
+page_lang: ro
+page_css: /css/project.css
+---
+
+<!-- ========== HEADER ========== -->
+<section id="header">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 logo">
+          <a href="/principala"><img src="/image/logo.png" alt="{{ site.company_name }}" class="logo_img" width="282px" height="91px"></a>
+        </div>
+        <div class="col-4 d-flex justify-content-center align-items-center">
+          <div class="right">
+            <a href="{{ site.facebook_url }}" class="header_txt">Facebook</a>
+            <a href="{{ site.instagram_url }}" class="header_txt">Instagram</a>
+            <a href="/principala"><img src="/image/home.png" alt="Acasa" width="24px" height="24px"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROJECT GALLERY ========== -->
+<section id="projects">
+  <span class="project_title d-flex justify-content-center pt-4">Proiecte</span>
+
+  <!-- Tab navigation -->
+  <div class="container d-flex justify-content-around mt-4 pb-4">
+    <div class="topnav">
+      {% for proj in projects.gallery %}
+      <span class="{% if loop.first %}active {% endif %}hed_click" id="{{ proj.slug }}_b">{{ proj.name }}</span>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Gallery panels -->
+  {% for proj in projects.gallery %}
+  <div id="{{ proj.slug }}_img">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+          <img src="/image/{{ proj.images[0] }}" loading="lazy" class="w-100 shadow-1-strong mb-4" alt="{{ proj.name }}">
+          <img src="/image/{{ proj.images[1] }}" loading="lazy" class="w-100 shadow-1-strong mb-4" alt="{{ proj.name }}">
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="/image/{{ proj.images[2] }}" loading="lazy" class="w-100 shadow-1-strong mb-4" alt="{{ proj.name }}">
+        </div>
+        <div class="col-lg-12 mb-4 mb-lg-0">
+          <img src="/image/{{ proj.video_thumb }}" loading="lazy" class="w-100 shadow-1-strong mb-4" alt="{{ proj.name }} video">
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="/image/{{ proj.images[3] }}" loading="lazy" class="w-100 shadow-1-strong mb-4" alt="{{ proj.name }}">
+        </div>
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="/image/{{ proj.images[4] }}" loading="lazy" class="w-100 shadow-1-strong mb-4" alt="{{ proj.name }}">
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<!-- ========== FOOTER ========== -->
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <span class="footer_txt">Mai multe proiecte le<br>puteti gasi aici</span><br>
+        {% for link in site.footer_links %}
+        <a class="footer_link" href="{{ link.url }}">{{ link.label }}</a><br>
+        {% endfor %}
+        <a href="tel:{{ site.phone2 }}" class="radial-out btn-advanced footer_btn mt-5 d-flex justify-content-center" style="padding:0;">Comanda un sunet</a>
+      </div>
+    </div>
+  </div>
+  <center>
+    <span class="copyright_f d-flex justify-content-center">© 2022 Wintentglass Romania. Built with Eleventy &amp; Decap CMS</span>
+  </center>
+</section>
+
+<!-- ========== FOOTER (MOBILE) ========== -->
+<section id="footer_m" style="margin-left:10px;margin-top:-43px;">
+  <div class="container">
+    <span class="footer_txt_m">Mai multe proiecte le<br>puteti gasi aici</span><br>
+    <div class="row">
+      <div class="col-8">
+        {% for link in site.footer_links %}
+        <a class="footer_link_m" href="{{ link.url }}">{{ link.label }}</a>
+        {% endfor %}
+      </div>
+      <div class="col-4">
+        <a href="{{ site.facebook_url }}"><embed src="/image/facebook.svg" type="" style="margin-right:20px;margin-top:20px;"></a>
+        <a href="{{ site.instagram_url }}"><embed src="/image/instagram.svg" type=""></a><br>
+      </div>
+    </div>
+    <center>
+      <a href="tel:{{ site.phone2 }}" class="btn footer_btn_m mt-5 mb-5">Comanda un sunet</a>
+    </center>
+  </div>
+  <center>
+    <span class="copyright_f_m d-flex justify-content-center">© 2022 Wintentglass Romania. Built with Eleventy &amp; Decap CMS</span>
+  </center>
+</section>
+
+<script>
+$(document).ready(function () {
+  {% for proj in projects.gallery %}
+  $('#{{ proj.slug }}_img').{% if loop.first %}show{% else %}hide{% endif %}();
+  {% endfor %}
+
+  if ($(window).width() > 800) {
+    $('#footer_m').hide();
+    $('#footer').show();
+  } else {
+    $('#footer').hide();
+    $('#footer_m').show();
+    $('.right').hide();
+    $(".logo").removeClass("col-8").addClass('d-flex').addClass('justify-content-center');
+  }
+});
+
+$(".hed_click").click(function () {
+  var active = document.querySelector('.topnav .active');
+  if (active) {
+    var oldImg = active.id.replace('_b', '_img');
+    active.classList.remove('active');
+    $('#' + oldImg).hide();
+  }
+  this.classList.add('active');
+  var newImg = this.id.replace('_b', '_img');
+  $('#' + newImg).show();
+});
+
+$(window).resize(function () {
+  if ($(window).width() > 800) {
+    $('#footer_m').hide();
+    $('#footer').show();
+  } else {
+    $('#footer').hide();
+    $('#footer_m').show();
+  }
+});
+</script>

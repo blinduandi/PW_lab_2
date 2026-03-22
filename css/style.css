@@ -898,7 +898,7 @@ img {
     opacity: 0;
     transform: translateY(100px);
     transition: transform 0.3s ease, opacity 0.5s ease;
-    animation: mascot-entrance 0.8s ease-out 2s forwards, mascot-bounce 3s ease-in-out 3s infinite;
+    animation: mascot-entrance 0.8s ease-out 1s forwards, mascot-bounce 3s ease-in-out 3s infinite;
 }
 
 .mascot-container:hover {
