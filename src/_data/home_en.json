@@ -1,15 +1,19 @@
 {
   "about_title": "About us",
-  "about_text": "WintentGlass company is successfully working on the Romanian and Moldovan market. We work on the principle of satisfying the needs and desires of each client. We managed to gather a team of competent and experienced professionals with extensive experience in this field. Here you will find the largest selection of pergolas, terraces and shading systems in Romania and the Republic of Moldova.",
-  "stat_experience_label": "Years of experience",
-  "stat_projects_label": "Finished projects",
+  "order_title": "Order a call",
+  "stat_experience_label": "Years of experience 2",
+  "order_btn": "Send the message",
+  "mascot_tooltip": "Hi! Need help? &#128075;",
   "stat_employees_label": "Hired people",
+  "order_name_placeholder": "Name",
+  "order_phone_placeholder": "Phone",
   "projects_title": "Project",
-  "projects_more": "More projects",
   "services_title": "Services",
-  "services_description": "Only here you will find a solution for the most complex structures with high quality products competent and precise assembly. Each of our specialists is constantly improving their skills in training and practical seminars. By calling us you will evaluate the quality of the services and goods that we are ready to offer you with pleasure. We know our business perfectly!",
   "services_subtitle1": "We offer our customers a wide range of services",
   "services_subtitle2": "High quality delivery and installation by competent specialists",
+  "stat_projects_label": "Finished projects",
+  "projects_more": "More projects",
+  "services_description": "Only here you will find a solution for the most complex structures with high quality products competent and precise assembly. Each of our specialists is constantly improving their skills in training and practical seminars. By calling us you will evaluate the quality of the services and goods that we are ready to offer you with pleasure. We know our business perfectly!",
   "services": [
     {
       "icon": "vehicol.svg",
@@ -32,9 +36,5 @@
       "title": "Warranty and post-warranty service"
     }
   ],
-  "order_title": "Order a call",
-  "order_name_placeholder": "Name",
-  "order_phone_placeholder": "Phone",
-  "order_btn": "Send the message",
-  "mascot_tooltip": "Hi! Need help? &#128075;"
+  "about_text": "WintentGlass company is successfully working on the Romanian and Moldovan market. We work on the principle of satisfying the needs and desires of each client. We managed to gather a team of competent and experienced professionals with extensive experience in this field. Here you will find the largest selection of pergolas, terraces and shading systems in Romania and the Republic of Moldova."
 }
